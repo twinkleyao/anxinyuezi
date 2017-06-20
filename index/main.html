@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="utf-8"> 
+   <title>【大型月子会所线上平台】安心月子</title>
+   <link rel="stylesheet" type="text/css" href="../public/frame/jquery-ui/css/base/jquery-ui-1.10.4.custom.min.css">
+   <link rel="stylesheet" href="..\public\frame\bootstrap-3.3.7-dist\css/bootstrap.min.css"> 
+   <link rel="stylesheet" type="text/css" href="../public/css/index.css"> 
+   <link href="../public/plugins/picSwich/css/picSwitch.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="../public/css/index-main.css">
+   <link rel="stylesheet" type="text/css" href="../public/css/index-selectPopFix.css">
+   <link rel="stylesheet" type="text/css" href="../public/css/index-info.css">
+   <script src="..\public\js/jquery.min.js"></script>
+   <script src="../public/frame/jquery-ui/js/jquery-ui-1.10.4.custom.min.js"></script>
+   <script src="../public/frame/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+   <script src="../public/js/QRcode.js"></script>
+   <script src="../public/js/hideplaceshow.js"></script>
+   <script src="../public/js/hidezoneshow.js"></script>
+   <script type="text/javascript" src="../public/plugins/picSwich/js/L_slide.js"></script>
+   <script src="../public/plugins/picSwich/js/picSwitch.js"></script>
+   
+
+   
+  
+   <script>
+  $(function() {
+    $("#main .left .order .text2 #datepicker").datepicker();
+  });
+  </script>
+   
+   <style type="text/css" >
+   
+  
+   #topHeader .logo a {
+    background-image: url(../public/img/003.jpg);
+    width: 245px;
+    height: 42px;
+   }
+   
+
+   </style>
+   
+     
+</head>
+<body>
+<div class="mainbody">
+<header>
+  <div id="topTools">
+    <div class="tool clearfix">
+      <div class="entry">
+      <span class="clientPhone glyphicon glyphicon-phone"><a href="" target="_blank">手机客户端</a></span>
+        <div class="dlQRcode" style="display: none;"><span>扫描二维码下载手机客户端</span><br><img src="../public/img/imganxin\QRcode\QRcode.png" alt=""></div>
+        <span class="aboutUs glyphicon glyphicon-heart"><a href="#">关于我们</a><i class="weibo"></i><i class="weixin"></i></span>
+      </div>
+      <div class="login" >
+       
+        <div class="loginCon">
+         <a id="login" href="#">登录</a> 
+         <a href="#">注册</a> 
+        </div> 
+         <em class="line"></em>
+         <a id="topUc" class="hasSelect" href="#">会员中心<span class="caret"></span></a>
+         <ul id="ucZone" class="hideZone" style="display: none;"  >
+              <li><a href="#">我的预约</a></li>
+              <li><a href="#">我的订单</a></li>
+              <li><a href="#">我的点评</a></li>
+              <li><a href="#">我的收藏</a></li>
+              <li><a href="#">个人信息</a></li>
+              <li><a href="#">账户安全</a></li>
+              <li><a href="#">账户设置</a></li>
+           </ul> 
+          <em class="line"></em>
+          <a  id="join" href="#">商户入驻</a>
+          <em class="line"></em>
+          <a href="#">合作加盟</a>
+         <em class="line"></em>
+  
+    </div>
+    </div>
+  </div>
+
+  <!--中间搜索-->
+  <div id="topHeader">
+    <div class="logo" style="display: inline-block;"><a href="#" ><img src="../public/img/imganxin/logo/anxin.png" alt=""></a>
+    </div>
+    <div class="place" style="display: inline-block;" >
+      <strong class="curCity">上海</strong>
+      <span class="glyphicon glyphicon-menu-down"></span>
+      <span class="glyphicon glyphicon-menu-up" style="display:none;"></span>
+    </div>
+    <div id ="placeZone" style="display: none;" >
+      <div class="hot clearfix"><span>热门城市</span>
+      <div class="cityCon">
+      <a href="#">上海</a>
+      <a href="#">北京</a>
+      <a href="#">广东</a>
+      </div>
+      </div>
+    </div>
+   
+   <div class="search" style="display: inline-block;">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="搜索 城市 月子中心 品牌 关键字">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">搜索</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="rx">
+    <div class="rx1">咨询热线</div>
+    <div class="rx2">666-666-6666</div>
+  </div>
+  </div>
+  
+  <!--导航-->
+  <nav>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">首页</a></li><!--
+     --><li><a href="#">月子会所</a></li><!--
+     --><li><a href="#">母婴</a></li><!--
+     --><li><a href="#">电子商城</a></li>
+    </ul>
+</nav>
+</header>
+
+<!--主页主要广告位-->
+<section id="main">
+<div class="main clearfix">
+<aside class="left">
+  <div class="order">
+    <span id="ord1" class="ord1 glyphicon glyphicon-map-marker"></span>
+    <div class="text text1"><span>请选择期望地点</span><i class="glyphicon glyphicon-menu-down" ></i><i class="glyphicon glyphicon-menu-up" style="display: none"></i></div>
+    <span id="ord2" class="ord2 glyphicon glyphicon-calendar"></span>
+    <div class="text text2"><input type="text" id="datepicker" value="请选择期望时间"><i class="glyphicon glyphicon-menu-down"></i><i class="glyphicon glyphicon-menu-up" style="display: none"></i></div>
+   <span id="ord3" class="ord3 glyphicon glyphicon-usd"></span>
+   <div class="text text3"><span>请选择期望价格</span><i class="glyphicon glyphicon-menu-down" ></i><i class="glyphicon glyphicon-menu-up" style="display: none"></i></div>
+    <div><input type="button" class="adsearch" value="立即查找" /></div>
+    <div style="display: none;" class="listCon selectZone">
+    <ul class="sup clearfix">
+        <li class="buxian"><a href="#">不限</a></li>
+        <li class="fanwei"><a href="#">市区</a></li>
+    </ul>
+    <ul class="sub clearfix">
+              <li><a href="#">浦东新区</a></li>
+            
+              <li><a href="#">黄浦区</a></li>
+              
+              <li><a href="#">长宁区</a></li>
+          
+              <li><a href="#">徐汇区</a></li>
+        
+              <li><a href="#">闵行区</a></li>
+          
+              <li><a href="#">普陀区</a></li>
+     
+              <li><a href="#">杨浦区</a></li>
+
+              <li><a href="#">虹口区</a></li>
+         
+              <li><a href="#">闸北区</a></li>
+
+              <li><a href="#">静安区</a></li>
+
+              <li><a href="#">宝山区</a></li>
+
+              <li><a href="#">卢湾区</a></li>
+
+               <li><a href="#">松江区</a></li>
+
+                <li><a href="#">嘉定区</a></li>
+   
+      </ul>
+    </div>
+    <ul class="listCon listConPrice" style="display: none;" >
+        <li>不限</li>
+        <li>20000元/月</li>
+        <li>20000元-30000元/月</li>
+        <li>30000元-40000元/月</li>
+    </ul>
+    
+  </div>
+  <ul class="slogan">
+      <li>国内首个大型月子中心线上平台</li>
+      <li>“最贴心，最便捷，最全面”</li>
+      <li>安心月子和您一起</li>
+      <li></li>
+  </ul>
+</aside>
+<article>
+  <div class="slide">
+  <div id="wrap" class="wrap af4">
+  <ul class="slidebox">
+      <li><a href="#"> <img class="slideimg" id="ad1" src="../public/img\001.jpg" alt=""></a></li>
+      <li><a href="#"><img class="slideimg" src="../public/img\002.jpg" alt=""></a></li>
+      <li><a href="#"><img class="slideimg" src="../public/img\003.jpg" alt=""></a></li>
+      <li><a href="#"> <img class="slideimg" src="../public/img\004.jpg" alt=""></a></li>
+  </ul>
+
+   <!-- <a id="prev" href="javascript:;"><span class="glyphicon glyphicon-menu-left"></span></a>
+   <a id="next" href="javascript:;"><span class="glyphicon glyphicon-menu-right"></span></a> -->
+  <!--  <ul id="dots">
+   <li style="background:#FF9D9D no-repeat scroll 0% 0%;" ></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   </ul> -->
+   </div>
+   
+  </div>
+  <div class="mby">
+    
+    <ul class="clearfix">
+        <li class="mf"><img src="../public/img/imganxin/logo/logo1.png" alt=""></li>
+        <li class="bj"><img src="../public/img/imganxin/logo/logo1.png" alt=""></li>
+        <li class="ybz"><img src="../public/img/imganxin/logo/logo1.png" alt=""></li>
+    </ul>
+  </div>
+  </article>
+<aside class="right"><div></div></aside></div>
+
+</section>
+<div id="selectPopFix">
+  <div class="popBox clearfix">
+    <a class="icon1" href="#" target="_blank" title="上海月子中心"><img src="../public/img/imganxin/main/logoko.png" alt=""></a>
+    <div class="s1 sItem">
+    <div class="title clearfix">
+    <h4>按价格</h4><a href="#" target="_blank">更多</a>
+    </div>
+    <ul class="con clearfix">
+        <li><a href="#" target="_blank">15000元以下</a></li>
+        <li><a href="#" target="_blank">15000元-20000元</a></li>
+        <li><a href="#" target="_blank">20000元-30000元</a></li>
+        <li><a href="#" target="_blank">30000以上</a></li>
+    </ul>
+    </div>
+    <div class="line"></div>
+    <div class="s2 sItem">
+     <div class="title clearfix">
+    <h4>按区域</h4><a href="#" target="_blank">更多</a>
+    </div>
+    <ul class="con clearfix">
+        <li><a href="#" target="_blank">黄浦区</a></li>
+        <li><a href="#" target="_blank">静安区</a></li>
+        <li><a href="#" target="_blank">徐汇区</a></li>
+        <li><a href="#" target="_blank">虹口区</a></li>
+    </ul>
+    </div>
+    <div class="line"></div>
+    <div class="s3 sItem">
+      <div class="title clearfix">
+    <h4>按类型</h4><a href="#" target="_blank">更多</a>
+    </div>
+    <ul class="con clearfix">
+        <li><a href="#" target="_blank">套房</a></li>
+        <li><a href="#" target="_blank">标间</a></li>
+        <li><a href="#" target="_blank">大房</a></li>
+        <li><a href="#" target="_blank">独栋</a></li>
+    </ul>
+    </div>
+    <div class="line"></div>
+    <div class="s4 sItem">
+       <div class="title clearfix">
+    <h4>按评价</h4><a href="#" target="_blank">更多</a>
+    </div>
+    <ul class="con clearfix">
+        <li><a href="#" target="_blank">月嫂优秀</a></li>
+        <li><a href="#" target="_blank">环境优美</a></li>
+        <li><a href="#" target="_blank">设施齐全</a></li>
+        <li><a href="#" target="_blank">交通方便</a></li>
+    </ul>
+    </div>
+    <div class="line2"></div>
+    <ul class="column clearfix">
+        <li class="yqxz"><a href="#" target="_blank">孕期写真</a><img src="../public/img/imganxin/logo/camera.png"></li>
+        <li class="bbsy"><a href="#" target="_blank">宝贝摄影</a><img src="../public/img/imganxin/logo/camera.png"></li>
+        <li class="jpys"><a href="#" target="_blank">金牌月嫂</a><img src="../public/img/imganxin/logo/camera.png"></li>
+        <li class="yqrj"><a href="#" target="_blank">孕期日记</a><img src="../public/img/imganxin/logo/camera.png"></li>
+    </ul>
+  </div>
+</div>
+<!--页面中间广告-->
+<div class="mod-home-mid-advertisement">
+  <a href="http://www.baidu.com"><img style="width: 100%;height: 90px" src="../public/img/imganxin/main/baidu.jpg"></a>
+</div>
+<!--特别推荐-->
+<section id="column1">
+
+  <h2><img src="../public/img/imganxin/logo/rec.png">精选商家<span><a href="#">更多</a></span></h2>
+  <div class="columnArticle">
+    <article class="cur">
+      <div class="left">
+        <a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a>
+      </div>
+      <div class="right">
+        <ul class="top clearfix">
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li class="last"><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+        </ul>
+        <ul class="bottom clearfix">
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li class="last"><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  
+</section> 
+<section id="column2">
+
+  <h2><img src="../public/img/imganxin/logo/rec.png">本月热门<span><a href="#">更多</a></span></h2>
+  <div class="columnArticle">
+    <article class="cur">
+      <div class="left">
+        <a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a>
+      </div>
+      <div class="right">
+        <ul class="top clearfix">
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li class="last"><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+        </ul>
+        <ul class="bottom clearfix">
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li class="last"><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  
+</section> 
+<section id="column3">
+
+  <h2><img src="../public/img/imganxin/logo/rec.png">月子服务<span><a href="#">更多</a></span></h2>
+  <div class="columnArticle">
+    <article class="cur">
+      <div class="left">
+        <a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a>
+      </div>
+      <div class="right">
+        <ul class="top clearfix">
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li class="last"><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+        </ul>
+        <ul class="bottom clearfix">
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+            <li class="last"><a href="http://www.dianping.com/shop/6823796"><img src="../public/img/imganxin/ad/ad.jpg"></a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  
+</section> 
+<section id="forum" class="clearfix">
+<aside class="info">
+  <h3>
+    相关资讯<a href="#" title="资讯" target="_blank">更多</a>
+  </h3>
+  <ul>
+      <li><a href="#" target="_blank">孕期注意事项</a></li>
+      <li><a href="#" target="_blank">如何挑选最满意的月子会所</a></li>
+      <li><a href="#" target="_blank">孕期注意事项</a></li>
+      <li><a href="#" target="_blank">孕期注意事项</a></li>
+      <li><a href="#" target="_blank">孕期注意事项</a></li>
+  </ul>
+</aside>
+<article>
+  <h3>
+    孕妈论坛<a href="#" title="资讯" target="_blank">更多</a>
+  </h3>
+   <ul>
+      <li><a href="#" target="_blank">孕妈日记分享</a></li>
+      <li><a href="#" target="_blank">孕期焦虑怎么办</a></li>
+      <li><a href="#" target="_blank">孕后如何快速瘦身</a></li>
+      <li><a href="#" target="_blank">宝宝食物的选择</a></li>
+      <li><a href="#" target="_blank">宝宝美照分享</a></li>
+  </ul>
+</article>
+</section></div>
+
+</body>
+</html>

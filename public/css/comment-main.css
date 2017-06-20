@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+.content{
+	width:80%;
+	margin:0 auto;
+	margin-bottom:20px;
+	padding:10px;
+}
+.content .cLeft{
+	width:70%;
+	float:left;
+}
+.content .cLeft .comment-header h2{
+	padding-left:33px;
+	height:30px;
+	line-height:30px;
+	color:#666;
+	font-size:20px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+}
+.content .cLeft .title{
+	margin:10px 0;
+	padding:0 35px;
+	height:60px;
+	line-height:60px;
+	background:#fafafa;
+	font-size:20px;
+	color:#333;
+	font-family:"微软雅黑";
+}
+.content .cLeft .title span{
+	font-size:14px;
+	color:#aaa;
+	font-family:"微软雅黑";
+}
+.content .cLeft .title span i{
+	color:#ff5384;
+}
+.content .cLeft .table .th{
+	clear:both;
+	padding:15px 0;
+	color:#999;
+}
+.content .cLeft .table .th .l {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+    padding-right: 25px;
+    text-align: right;
+    font-size: 14px;
+}
+.content .cLeft .table .th .l i {
+    color: #ff5384;
+}
+.content .cLeft .table .th .r {
+    float: left;
+    line-height: 30px;
+}
+.zh5, .fw5, .ss5, .yzc5, .jt5, .ph5, .aq5 {
+    float: left;
+    position: relative;
+    margin: 0 10px 0 0;
+   width:130px;
+	height:30px;
+   
+}
+.zh5ul, .fw5ul, .ss5ul, .yzc5ul, .jt5ul, .ph5ul, .aq5ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+	width:130px;
+	height:30px;
+   
+}
+.zh5ul li, .fw5ul li, .ss5ul li, .yzc5ul li, .jt5ul li, .ph5ul li, .aq5ul li  {
+  
+    float: left;
+    cursor: pointer;
+    line-height: 30px;
+	margin-right:5px;
+}
+.cLeft .table .th .r .texts {
+    padding: 5px 10px;
+    width:100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    color: #999;
+    line-height: 24px;
+}
+.cLeft .table .th .r .ps {
+    padding: 5px 0;
+    width: 540px;
+    height: 20px;
+    line-height: 20px;
+    font-family: 宋体;
+    color: #ff5384;
+}
+.cLeft .table .th .r .ps span {
+    float: right;
+    color: #666;
+}

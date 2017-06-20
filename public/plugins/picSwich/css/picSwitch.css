@@ -1,0 +1,20 @@
+
+* {margin:0;padding:0;}
+ul {list-style:none;margin: 0;}
+
+.wrap {width:100%;height:80%;position:relative;overflow:hidden;float:left;}
+.slidebox {width:100%;position:absolute;top:0;left:0;height:100%;}
+.slidebox li {float:left;width:100%;height:100%;left:0;top:0;}
+.slidebox li img {display:block;width:100%;height:100%;}
+
+.dot {
+	position:absolute;width:100%;height:30px;text-align:center;bottom:15px;left:0;}
+.dot p {margin-right:10px;}
+.dot b {width:15px;
+height:15px;
+border-radius:15px;
+color:#333;
+display:inline-block;
+background:grey;text-align:center;line-height:17px;margin:0 5px;margin-top:6px;cursor:pointer;font-weight:normal;}
+.dot .cur {background:#FF9D9D;
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, span {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+}
+ol,ul{list-style:none;}
+#nav_crumb{
+	width:80%;
+	margin:0 auto;
+	position:relative;
+	color:#666666;
+	height:50px;
+	line-height:50px;
+	margin-top:5px;
+	
+}
+.breadcrumb{
+	background:#fff;
+	padding-top:5px;
+}
+.breadcrumb .active a{
+	color:#F99;
+}
+#nav_crumb .sch{
+	width:20%;
+	margin-top:-70px;;
+	height:22px;
+	border:1px solid #e5e5e5;
+	border-radius:11px;
+	position:relative;
+	float:right;
+
+}
+#nav_crumb .sch .input-group{
+	width:100%;
+	height:100%;
+}
+#nav_crumb .sch .input-group .form-control{
+	width:100%;
+	height:22px;
+}
+#nav_crumb .sch .input-group .input-group-btn{
+	height:22px;
+}
+#nav_crumb .sch .input-group .input-group-btn .btn{height:22px;
+top:-15px;
+margin:0;
+padding:0 12px;
+background:#C0C0C0;
+color:#666;
+border:0;}
+#nav_crumb .sch .sipt{
+	position:absolute;
+	top:0;
+	left:8px;
+	width:80%;
+	height:22px;
+	z-index:98;
+	border:0;
+}

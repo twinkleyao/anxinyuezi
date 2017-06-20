@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+	<title>我要点评</title>
+	<link rel="stylesheet" type="text/css" href="../public/frame/jquery-ui/css/base/jquery-ui-1.10.4.custom.min.css">
+   <link rel="stylesheet" href="..\public\frame\bootstrap-3.3.7-dist\css/bootstrap.min.css"> 
+   <link rel="stylesheet" type="text/css" href="../public/css/index.css"> 
+   <link rel="stylesheet" type="text/css" href="../public/css/comment-nav.css">
+   <link rel="stylesheet" type="text/css" href="../public/css/comment-main.css">
+    <script src="..\public\js/jquery.min.js"></script>
+   <script src="../public/frame/jquery-ui/js/jquery-ui-1.10.4.custom.min.js"></script>
+   <script src="../public/frame/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+   <script src="../public/js/QRcode.js"></script>
+</head>
+<body>
+<header>
+  <div id="topTools">
+    <div class="tool clearfix">
+      <div class="entry">
+      <span class="clientPhone glyphicon glyphicon-phone"><a href="" target="_blank">手机客户端</a></span>
+        <div class="dlQRcode" style="display: none;"><span>扫描二维码下载手机客户端</span><br><img src="../public/img/imganxin\QRcode\QRcode.png" alt=""></div>
+        <span class="aboutUs glyphicon glyphicon-heart"><a href="#">关于我们</a><i class="weibo"></i><i class="weixin"></i></span>
+      </div>
+      <div class="login" >
+       
+        <div class="loginCon">
+         <a id="login" href="#">登录</a> 
+         <a href="#">注册</a> 
+        </div> 
+         <em class="line"></em>
+         <a id="topUc" class="hasSelect" href="#">会员中心<span class="caret"></span></a>
+         <ul id="ucZone" class="hideZone" style="display: none;"  >
+              <li><a href="#">我的预约</a></li>
+              <li><a href="#">我的订单</a></li>
+              <li><a href="#">我的点评</a></li>
+              <li><a href="#">我的收藏</a></li>
+              <li><a href="#">个人信息</a></li>
+              <li><a href="#">账户安全</a></li>
+              <li><a href="#">账户设置</a></li>
+           </ul> 
+          <em class="line"></em>
+          <a  id="join" href="#">商户入驻</a>
+          <em class="line"></em>
+          <a href="#">合作加盟</a>
+         <em class="line"></em>
+  
+    </div>
+    </div>
+  </div>
+
+  <!--中间搜索-->
+  <div id="topHeader">
+    <div class="logo" style="display: inline-block;"><a href="#" ><img src="../public/img/imganxin/logo/anxin.png" alt=""></a>
+    </div>
+    <div class="place" style="display: inline-block;" >
+      <strong class="curCity">上海</strong>
+      <span class="glyphicon glyphicon-menu-down"></span>
+      <span class="glyphicon glyphicon-menu-up" style="display:none;"></span>
+    </div>
+    <div id ="placeZone" style="display: none;" >
+      <div class="hot clearfix"><span>热门城市</span>
+      <div class="cityCon">
+      <a href="#">上海</a>
+      <a href="#">北京</a>
+      <a href="#">广东</a>
+      </div>
+      </div>
+    </div>
+   
+  
+    
+  <div class="rx">
+    <div class="rx1">咨询热线</div>
+    <div class="rx2">666-666-6666</div>
+  </div>
+  </div>
+  
+  <!--导航-->
+ <nav>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">首页</a></li><!--
+     --><li><a href="#">月子会所</a></li><!--
+     --><li><a href="#">母婴</a></li><!--
+     --><li><a href="#">电子商城</a></li>
+    </ul>
+</nav>
+</header>
+<div id="nav_crumb">
+<ol class="breadcrumb">
+    <li><a href="./main.html">首页</a></li>
+    <li><a href="#">月子会所</a></li>
+    <li><a href="#">琅悦月子会所</a></li>
+    <li class="active"><a href="#">我要评价</a></li>
+</ol>
+<div class="sch" style="display: inline-block;">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="搜索 区域 月子中心 关键字">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">搜索</button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<section class="content clearfix">
+  <article class="cLeft">
+   <div class="comment-header">
+  <h2>我要评价</h2>
+   </div> 
+   <div class="title">
+     琅悦月子会所
+     <span>
+       <i>*</i>
+       为必填项
+     </span>
+   </div>
+   <div class="table">
+     <div class="th">
+       <div class="l">
+         <i>*</i> 综合评价
+       </div>
+       <div class="r">
+         <div class="zh5">
+         <ul id="zh5ul" class="zh5ul">
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+         </ul>
+         </div>
+         <span class="des"><img id="tip" src="../public/img/tip.jpg"/><p id="grade"></p></span>
+       </div>
+     </div>
+     <div class="th">
+        <div class="l">
+         <i>*</i> 服务
+       </div>
+       <div class="r">
+         <div class="fw5">
+         <ul id="fw5ul" class="fw5ul">
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+         </ul>
+         </div>
+         <span class="des">为服务打分<p id="grade"></p></span>
+       </div>
+     </div>
+     <div class="th">
+       <div class="l">
+         <i>*</i> 设施
+       </div>
+       <div class="r">
+         <div class="ss5">
+         <ul id="ss5ul" class="ss5ul">
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+         </ul>
+         </div>
+         <span class="des">为设施评分<p id="grade"></p></span>
+       </div>
+       </div>
+     <div class="th">
+       <div class="l">
+         <i>*</i> 月子餐
+       </div>
+       <div class="r">
+         <div class="yzc5">
+         <ul id="yzc5ul" class="yzc5ul">
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+         </ul>
+         </div>
+         <span class="des">为月子餐评分<p id="grade"></p></span>
+       </div></div>
+     <div class="th"><div class="l">
+         <i>*</i> 交通
+       </div>
+       <div class="r">
+         <div class="jt5">
+         <ul id="jt5ul" class="jt5ul">
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+         </ul>
+         </div>
+         <span class="des">为交通评分<p id="grade"></p></span>
+       </div>
+       </div>
+     <div class="th">
+       <div class="l">
+         <i>*</i> 家人陪护
+       </div>
+       <div class="r">
+         <div class="ph5">
+         <ul id="ph5ul" class="ph5ul">
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+         </ul>
+         </div>
+         <span class="des">为家人陪护评分<p id="grade"></p></span>
+       </div>
+       </div>
+     <div class="th">
+       <div class="l">
+         <i>*</i> 安全
+       </div>
+       <div class="r">
+         <div class="aq5">
+         <ul id="aq5ul" class="aq5ul">
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+             <li><img src="../public/img/star.jpg"/></li>
+         </ul>
+         </div>
+         <span class="des">为安全评分<p id="grade"></p></span>
+       </div>
+       </div>
+       <div class="th">
+        <div class="l"> 评价</div>
+        <div class="r">
+          <textarea class="texts">写下您的一些评价和想法吧，您的建议能够帮助到更多的用户，谢谢！</textarea>
+          <div class="ps"><span>30-800字</span></div>
+        </div>
+        
+       </div>
+       <input type="file" id="file" name="file" size="10"/>
+       <input type="button" value="Upload">
+       
+   </div>
+  </article>
+</section>
+
+</body>
+</html>
